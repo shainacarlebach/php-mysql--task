@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Employees</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="front/styles/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <body>
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-header clearfix">
+                            <h2 class="pull-left">Employee Form</h2>
+                            <button class="btn btn-success btn-md pull-right" id="createemployee">Create New Employee</button>
+                        </div>
+                        <div class="form-group" id="employeeForm">
+                            <div>
+                                <label for="employeeID">Employee ID:</label>
+                                <br>
+                                <!-- <select name="employees" id="selectemployee">
+                                    <option>Employee ID :</option>
+                                    <option id=1>1</option>
+                                    <option id=2>2</option>
+                                    <option id=3>3</option>
+                                    <option id=4>4</option>
+                                    <option id=5>5</option>
+                                </select> -->
+                                <input type="number" name="id" id="selectemployee" placeholder="id">
+                            </div>
+                            <div>
+                                <br>
+                                <button class="btn btn-info btn-md" id="getemployee">Get Employee by ID</button>
+                            </div>
+                            <label for="employeeName">Employee Name:</label>
+                            <br>
+                            <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+                            <br>
+                            <label for="startDate">Start Date:</label>
+                            <input type="date" class="form-control" id="date" placeholder="Enter date" name="startdate">
+                            <br>
+                            <button class="btn btn-primary btn-md" id="getall">Get All Employees</button>
+                            <button class="btn btn-danger btn-md" id="delete">Delete Employee</button>
+                            <button class="btn btn-warning btn-md" id="update">Update Employee</button>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div id="datatable"></div>
+            </div>
+        </div>
+
+        <script src="front/scripts/app.js"></script>
+        <script src="front/scripts/employeeModule.js"></script>
+        <script src="front/scripts/validations.js"></script>
+
+    </body>
+
+</html>

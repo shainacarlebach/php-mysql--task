@@ -1,0 +1,15 @@
+.wrapper{
+  width: 650px;
+  margin: 0 auto;
+}
+.page-header h2{
+  margin-top: 0;
+}
+ 
+.btn #getemployee{
+  padding:6px 16px; 
+}
+
+#datatable{
+  border-color: dodgerblue;
+}
